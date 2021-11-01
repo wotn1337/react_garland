@@ -1,0 +1,40 @@
+.garlandBall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform-origin: center -50%;
+}
+
+.garlandBall:hover {
+    animation: rotate 0.8s;
+}
+
+@keyframes rotate {
+    33% {
+        transform: rotate(5deg);
+    }
+    66% {
+        transform: rotate(-10deg);
+    }
+    33% {
+        transform: rotate(5deg);
+    }
+}
+
+.garlandBall:nth-child(2n) {
+    margin-top: 10px;
+}
+
+.hook {
+    width: 5px;
+    height: 10px;
+    background-color: #ffe071;
+    margin-bottom: -5px;
+}
+
+.ball {
+    /*width: 25px;*/
+    /*height: 25px;*/
+    border-radius: 50%;
+}
+
